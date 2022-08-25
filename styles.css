@@ -1,9 +1,14 @@
+@font-face {
+    src: url(fonts/myriad-pro-regular.otf);
+    font-family: Myriad Pro ;
+
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0%;
     font-family:'Myriad Pro';
-    src: url(/font/);
 }
 
 .navbar {
