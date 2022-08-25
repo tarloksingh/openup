@@ -161,13 +161,13 @@
         justify-items: left;
         flex-direction: column;
         margin-left:10%;
-        margin-right:10%;
+        margin-right:5%;
     }
 
 
     .main__content h1 {
         display: inline;
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 700;
         color: #ffffff;
     }
@@ -192,7 +192,7 @@
         font-weight: 300;
         font-size: 18px;
         color: #ffffff;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .main__content p2 {
