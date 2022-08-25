@@ -220,13 +220,13 @@
     #android__img{
         display: flex;
         height: auto;
-        width: 48%;
+        width: 94%;
     }
 
     #iPhone__img{
         display: flex;
         height: auto;
-        width: 48%;
+        width: 94%;
     }
     
 
@@ -246,8 +246,7 @@
     .demo h1{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        padding:10%;
+        padding:5%;
         font-family: myriad-pro, sans-serif;
         font-style: normal;
         font-weight: 300;
@@ -319,9 +318,10 @@
         font-family: myriad-pro, sans-serif;
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 16px;
         color: #ffffff;
         padding-top: 0%;
+        padding-bottom: 8%;
     }
 }
 }
