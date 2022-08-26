@@ -131,6 +131,9 @@
 
 @media screen and (max-width: 500px) {
 
+    
+
+
     .main__image--container{
         display: flex;
         align-items: center;
@@ -145,6 +148,8 @@
         display:flex;
         width:75%;
         height:75%;
+        
+        
     }
 
 }
@@ -162,6 +167,7 @@
         flex-direction: column;
         margin-left:5%;
         margin-right:5%;
+        
     }
 
 
@@ -270,6 +276,12 @@
         align-items: center;
         color: #5B5B5B;
      
+    }
+
+    .main__image--container2{
+        display: flex;
+        height: 500px;
+
     }
 
 }
