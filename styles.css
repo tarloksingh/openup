@@ -278,13 +278,26 @@
      
     }
 
+
+
+}
+
+@media screen and (max-width: 500px){
     .main__image--container2{
         display: flex;
         height: 500px;
+        width: 250px;
+        justify-content: center;
 
     }
 
+    #main__vid{
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+
 
 
 /* Demo Mobile Responsive */
