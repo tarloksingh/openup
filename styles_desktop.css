@@ -55,29 +55,23 @@
 #main__img{
     display:flex;
     width:auto;
-    height: 300px;
+    height: 400px;
 }
 
-
-.main__content h1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffffff;
-}
 
 .main__headline{
     display: flex;
     justify-items: left;
     flex-direction: column;
-    margin-left:5%;
-    margin-right:5%;
+    margin-right:10%;
+    margin-top: 5%;
     
 }
 
 
 .main__content h1 {
     display: inline;
-    font-size: 32px;
+    font-size: 4rem;
     font-weight: 700;
     color: #ffffff;
 }
@@ -99,7 +93,7 @@ span.text{
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     color: #ffffff;
     margin-top: 5%;
 }
@@ -109,7 +103,7 @@ span.text{
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     color: #ffffff;
     margin-top: 5%;
 }
@@ -134,17 +128,17 @@ span.text{
     
 .downloadcontainer{
         display: flex;
-        margin:10% 0 10% 0;
+        margin:5% 0 5% 0;
 }
         
 #android__img{
         height: auto;
-        width: 150px;
+        width: 275px;
 }
     
 #iPhone__img{
         height: auto;
-        width: 150px;
+        width: 275px;
 }
 
 

@@ -81,13 +81,14 @@
         flex-direction: column;
         margin-left:5%;
         margin-right:5%;
+        margin-top: 0%;
         
     }
 
 
     .main__content h1 {
         display: inline;
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 700;
         color: #ffffff;
     }
@@ -127,7 +128,7 @@
     .downloadbuttons{
         display: flex;
         background-color: black;
-        justify-content: center;
+        justify-content: spa;
         align-items: center;
         flex-direction: row;
 
