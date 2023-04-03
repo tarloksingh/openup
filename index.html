@@ -1,72 +1,111 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Waitlist Form</title>
-    <script src="accounts.google.com/gsi/client" async defer ></script>
-    <script src="https://apis.google.com/js/api.js"></script>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Openup: Make New Friends</title>
+        <link rel="stylesheet" href="https://use.typekit.net/wmy5tku.css">
+        <link rel="stylesheet" href="styles_desktop.css">
+        <link rel="stylesheet" href="styles_mobile.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+        <style>
+            #anim{max-width: 800px;margin: 0 auto;}
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">openup</a>
+                <div class="navbar__toggle" id="mobile-">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+ 
 
 
-</head>
-<body>
-    <button onclick="openForm()">Join the Waitlist</button>
-    <div id="waitlist-form" style="display:none">
-        <form>
-            <label for="firstname">First Name:</label>
-            <input type="text" id="firstname" name="firstname" required><br><br>
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <input type="submit" value="Submit" onclick="submitForm(event)">
-        </form>
-    </div>
-    <script>
-        function openForm() {
-            document.getElementById("waitlist-form").style.display = "block";
-        }
 
-        function submitForm(event) {
-            event.preventDefault(); // prevent default form submission behavior
+        <!--Hero Section-->
+        <div class="main">
+            <div class="main__container">
+                <div class="main__image--container">
+                    <img src="images/White Friends.gif" alt="pic" id="main__img">
+                 </div> 
+            </div>
+            <div class="main__headline">
+                <div class="main__content">
+                    <h1>The only app dedicated to <span class="text">making new friends.</span></h1>
+                    <p>We are dedicated to helping you make new friends, maintain longterm relationships, and help you become a more sociable person. </p>
+                    <p2> We made this for those of you who are tired of being alone.</p2>
+                </div>   
+            </div>  
+        </div>
 
-            // Load the Google API client library
-            gapi.load('client', function() {
-                // Initialize the Google API client with your client ID and client secret
-                gapi.client.init({
-                    clientId: '523207021547-2s4abrr770aptmb9pdviq069ujbmola7.apps.googleusercontent.com',
-                    clientSecret: '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',
-                    discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-                    scope: 'https://www.googleapis.com/auth/spreadsheets'
-                }).then(function() {
-                    // Get the access token for the user
-                    return gapi.auth2.getAuthInstance().signIn();
-                }).then(function() {
-                    // Get the Google Sheets API service
-                    var sheets = gapi.client.sheets.spreadsheets;
+        <div class="downloadbuttons">
+            <div class="downloadcontainer">
 
-                    // Get the form data from the fields
-                    var firstname = document.getElementById('firstname').value;
-                    var lastname = document.getElementById('lastname').value;
-                    var email = document.getElementById('email').value;
+                <a href="https://apps.apple.com/us/app/openup-make-friends/id1602042557?ppid=fd8d3571-26cd-4983-8cd1-5e435f6ad169"> <img src="images/Apple_Download_Button.png" alt="pic2" id="iPhone__img"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.openupdating"> <img src="images/Android_Download_Button.png" alt="pic2" id="android__img"></a>
 
-                    // Append the form data to the Google Sheets file
-                    sheets.values.append({
-                        spreadsheetId: '1ZZKjOafXP7XR4OTrJVbcCkXgBeVhFb3pWkrcI0JTJro',
-                        range: 'Sheet1!A:C',
-                        valueInputOption: 'USER_ENTERED',
-                        insertDataOption: 'INSERT_ROWS',
-                        resource: {
-                            values: [[firstname, lastname, email]]
-                        }
-                    }).then(function(response) {
-                        console.log(response);
-                        alert('Form submission successful!');
-                    }, function(reason) {
-                        console.error('Error: ' + reason.result.error.message);
-                        alert('Form submission failed. Please try again later.');
-                    });
-                });
-            });
-        }
-    </script>
-</body>
+            </div>
+        </div>
+
+
+        <!--Demo Section-->
+        <div class="demo">
+            <h1>Listen to what people have to say. Invite anyone to chat with you.</h1>
+            <div class="main__image--container2">
+                <video src="Video/Demo_Video.mp4" playsinline controls loop alt="vid" id="main__vid"></video>
+            </div>
+
+        </div>
+        <div class="demo__container">
+            <div class="demo__card">
+                <p>(Tap play to hear the demo)</p>
+            </div>
+        </div>
+
+        <!--Last Section-->
+        <div class="faq">
+                <h1>Frequently Asked Questions</h1>
+            <div class="faq__questions">
+                <h2>Q: How do I sign-out?</h2>
+                <p>A: On the profile tab there is a gear to the top right, tap that. The sign out option is at the bottom.</p>              
+                <h2>Q: How do I send a text on openup?</h2>
+                <p>A: There is no texting on openup, you can voice call, video call and send audio messages. Ask for their number to text!</p>
+                <h2>Q: How do I delete my account?</h2>
+                <p>A: On the profile tab there is a gear to the top right, tap that.  The delete account option is at the bottom.</p>
+                <h2>Q: How do I report or block a user?</h2>
+                <p>A: On the top right of any user profile are three dots, tap that and the options to block or report are there. </p>
+                <h2>Q: Who is Tarlok?</h2>
+                <p>A: He is the founder and your first friend of openup, if you have any issues let him know!</p>
+                <h2>Contact Us</h2>
+                <p>If you have any questions or concerns, feel free to email us at support@openupfriends.com </p>
+            </div>
+            <div class="downloadbuttons">
+                <div class="downloadcontainer">
+
+                    <a href="https://apps.apple.com/us/app/openup-make-friends/id1602042557?ppid=fd8d3571-26cd-4983-8cd1-5e435f6ad169"> <img src="images/Apple_Download_Button.png" alt="pic2" id="iPhone__img"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.openupdating"> <img src="images/Android_Download_Button.png" alt="pic2" id="android__img"></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </body>
 </html>
+
